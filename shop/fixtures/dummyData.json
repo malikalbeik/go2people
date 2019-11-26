@@ -1,0 +1,223 @@
+[
+    {
+        "model": "shop.Category",
+        "pk": 1,
+        "fields": {
+            "title": "construction materials"
+        }
+    },
+    {
+        "model": "shop.Category",
+        "pk": 2,
+        "fields": {
+            "title": "tools"
+        }
+    },
+
+
+    {
+        "model": "shop.Product",
+        "pk": 1,
+        "fields": {
+            "name": "Quikrete Anchoring Cement 10-30 Min 10 Lb (1, 10 lb.)",
+            "photo": "dummyData/cement10lb.jpg",
+            "description": "Quikrete Anchoring Cement 10 lb.",
+            "company_name": "Quikrete",
+            "company_logo": "dummyData/quikrete.png",
+            "categories": [
+                1
+            ],
+            "school_type": "praktijkonderwijs",
+            "price": 100,
+            "expiration_date": "2019-12-22"
+        }
+    },
+    {
+        "model": "shop.Product",
+        "pk": 2,
+        "fields": {
+            "name": "Sashco Slab Concrete Crack Repair Sealant (Pack of 3)",
+            "photo": "dummyData/sealant.jpg",
+            "description": "Step outside and you’re likely to see a concrete crack in less than two seconds flat. They’re in driveways, sidewalks, garages, patios, pool decks, and basements. Cracks harbor weeds and anthills, and cause toe injuries (ouch!). They’re eyesores that never seem to go away. Changes in temperature, moisture, shifting soils, and traffic only make them worse. Enough is enough! Just say no to cracks. Use Slab: The Serious Fix for Concrete Cracks. Slab is an easy-to-apply water-based sealant that really stretches – up to 300% of original crack size! – to create a permanent, weatherproof repair that stands the test of time. Your knees and back will thank you for using a product that won’t require repeated repairs year after year. Slab sticks, stretches, and stays to banish concrete cracks for good.",
+            "company_name": "Sashco",
+            "company_logo": "dummyData/sashco.jpeg",
+            "categories": [
+                1
+            ],
+            "school_type": "praktijkonderwijs",
+            "price": 29.99,
+            "expiration_date": "2019-12-10"
+        }
+    },
+    {
+        "model": "shop.Product",
+        "pk": 3,
+        "fields": {
+            "name": "Dap 31084 Concrete Patch Interior and Exterior, 1-Quart",
+            "photo": "dummyData/concrete.jpg",
+            "description": "Used to patch small cracks and breaks, or spot level concrete and masonry surfaces such as basement walls, patios, steps, sidewalks and driveways. It dries to a durable, hard finish and is non-shrinking. Interior/exterior use.",
+            "company_name": "Dap",
+            "company_logo": "dummyData/dap.png",
+            "categories": [
+                1
+            ],
+            "school_type": "vmbo",
+            "price": 7.99,
+            "expiration_date": "2019-12-15"
+        }
+    },
+    {
+        "model": "shop.Product",
+        "pk": 4,
+        "fields": {
+            "name": "MASTA Handy 120 Bucket Trowel",
+            "photo": "dummyData/trowel.jpg",
+            "description": "MASTA Handy 120 Bucket Trowel | Soft Grip Handle | Tile, Brick, Concrete, Plaster | Ergonomic Hanging Shape, Rust-Resistant Stainless Steel | Heavy-Duty Home or Construction Use.",
+            "company_name": "Masta",
+            "company_logo": "dummyData/masta.jpg",
+            "categories": [
+                2
+            ],
+            "school_type": "vmbo",
+            "price": 14.99,
+            "expiration_date": "2019-12-13"
+        }
+    },
+    {
+        "model": "shop.Product",
+        "pk": 4,
+        "fields": {
+            "name": "Chisel set",
+            "photo": "dummyData/chisel.jpg",
+            "description": "Kendo 3pcs Industrial Grade All Purpose Cold Chisel Set - Octagonal Steel Hand Tools For Carpentry, Metalwork, Woodwork & Masonry - Sizes 8, 10, 12 - Roll Up Storage Pouch Included",
+            "company_name": "Kendo",
+            "company_logo": "dummyData/kendo.jpeg",
+            "categories": [
+                2
+            ],
+            "school_type": "mbo",
+            "price": 19.99,
+            "expiration_date": "2019-12-27"
+        }
+    },
+    {
+        "model": "shop.Product",
+        "pk": 5,
+        "fields": {
+            "name": "Square Notch",
+            "photo": "dummyData/SquareNotch.jpg",
+            "description": "M-D Building Products 20058 3/16-Inch by 3/16-Inch by 3/16-Inch Premium Square Notch",
+            "company_name": "MD Building Products",
+            "company_logo": "dummyData/md.png",
+            "categories": [
+                2
+            ],
+            "school_type": "mbo",
+            "price": 6.11,
+            "expiration_date": "2019-12-23"
+        }
+    },
+    {
+        "model": "shop.Product",
+        "pk": 6,
+        "fields": {
+            "name": "Ceramic Tile Adhesive",
+            "photo": "dummyData/ceramicTileAdhesive.jpg",
+            "description": "Dap 25190 Weldwood Multi-Purpose Ceramic Tile Adhesive, 1-Quart",
+            "company_name": "Dap",
+            "company_logo": "dummyData/dap.png",
+            "categories": [
+                1
+            ],
+            "school_type": "mbo",
+            "price": 10.20,
+            "expiration_date": "2019-12-05"
+        }
+    },
+    {
+        "model": "shop.Product",
+        "pk": 7,
+        "fields": {
+            "name": "Mosaic & Glass Tile Mortar",
+            "photo": "dummyData/glassTileMortar.jpg",
+            "description": "Premium glass and tile mortar with polymer Adesilex P10 is a premium-grade, bright white, multipurpose thin-set mortar formulated with nonsag properties. Adesilex P10 is designed for glass tile, glass mosaic, and marble mosaic, and is ideal for light translucent natural stone.",
+            "company_name": "Mapei",
+            "company_logo": "dummyData/mapei.jpg",
+            "categories": [
+                1
+            ],
+            "school_type": "opleidingsbedrijf",
+            "price": 34.99,
+            "expiration_date": "2019-12-09"
+        }
+    },
+    {
+        "model": "shop.Product",
+        "pk": 8,
+        "fields": {
+            "name": "100 Piece Home Repair Tool Set",
+            "photo": "dummyData/toolSet.jpg",
+            "description": "DEKOPRO 100 Piece Home Repair Tool Set,General Household Hand Tool Kit with Plastic Tool Box Storage",
+            "company_name": "Dekopro",
+            "company_logo": "dummyData/dekopro.jpg",
+            "categories": [
+                2
+            ],
+            "school_type": "opleidingsbedrijf",
+            "price": 37.99,
+            "expiration_date": "2019-12-06"
+        }
+    },
+    {
+        "model": "shop.Product",
+        "pk": 9,
+        "fields": {
+            "name": "Universal Socket",
+            "photo": "dummyData/universalSocket.jpg",
+            "description": "Universal Socket, Kusonkey Professional 7mm-19mm Universal Socket Tool Sets with Power Drill Adapter",
+            "company_name": "Kusonkey",
+            "company_logo": "dummyData/kusonkey.jpg",
+            "categories": [
+                2
+            ],
+            "school_type": "opleidingsbedrijf",
+            "price": 13.99,
+            "expiration_date": "2019-12-09"
+        }
+    },
+    {
+        "model": "shop.Product",
+        "pk": 10,
+        "fields": {
+            "name": "Black and Yellow Safety Adhesive Sticker",
+            "photo": "dummyData/safetySticker.jpg",
+            "description": "Black and Yellow Safety Adhesive Sticker Grip Non Skid Tape Anti-Slip Adhesive Stickers Mat for Stairs Floor Stairway 5Mx5CM",
+            "company_name": "ATMOMO",
+            "company_logo": "",
+            "categories": [
+                1,
+                2
+            ],
+            "school_type": "opleidingsbedrijf",
+            "price": 13.99,
+            "expiration_date": "2019-12-25"
+        }
+    },
+    {
+        "model": "shop.Product",
+        "pk": 11,
+        "fields": {
+            "name": "EVERSPROUT 7-to-19 Foot Paint Roller Kit",
+            "photo": "dummyData/paintRoller.jpg",
+            "description": "EVERSPROUT 7-to-19 Foot Paint Roller Kit (25 Ft. Reach) | Extra Wide 12-inch Roller Frame, Corner Roller Brush, Extension Pole, 2X Poly-Wool Roller Covers for Indoor/Outdoor | Works w/All Paint Types",
+            "company_name": "Eversprout",
+            "company_logo": "dummyData/eversprout.png",
+            "categories": [
+                2
+            ],
+            "school_type": "opleidingsbedrijf",
+            "price": 13.99,
+            "expiration_date": "2019-12-10"
+        }
+    }
+]

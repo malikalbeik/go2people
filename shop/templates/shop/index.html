@@ -14,10 +14,20 @@
         {% for product in products %}
         <li>
             <h2>{{product.name}}</h2>
-            <img style="max-width: 500px;" src='http://localhost:8000/media/{{product.photo}}' alt="{{product.name}}">
+            {% if product.photo %}
+                <img style="max-width: 500px;" src='http://localhost:8000/media/{{product.photo}}' alt="{{product.name}}">
+            {% else %}
+                <p>This product doesn't have a logo</p>
+            {% endif %}
             <p>{{product.get_abbreviated_description}}</p>
             <p>Company Name: {{product.company_name}}</p>
-            <img style="max-width: 500px;" src='http://localhost:8000/media/{{product.company_logo}}' alt="{{product.company_name}}">
+            {% if product.company_logo %}
+                <img style="max-width: 500px;" src='http://localhost:8000/media/{{product.company_logo}}'
+                    alt="{{product.company_name}}">
+            {% else %}
+                <p>This company doesn't have a logo</p>
+            {% endif %}
+            
             <p>Categories: </p>
             <ul>
                 {% for category in product.categories.all %}
