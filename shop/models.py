@@ -41,6 +41,12 @@ class Product(models.Model):
     price = models.FloatField()
     expiration_date = models.DateField(null=False)
 
+    def get_abbreviated_description(self):
+        """returns only the first 25 words of the description"""
+        word_array = str(self.description).split()[:25]
+        abbreviated_description = ' '.join(word_array)
+        return abbreviated_description
+
     class Meta:
         ordering = ["-expiration_date", "name"]
 

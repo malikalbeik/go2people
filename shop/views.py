@@ -5,4 +5,9 @@ from .models import Product
 
 
 def index(request):
-    return "TODO: add view"
+    products = Product.objects.all()
+    template = loader.get_template("shop/index.html")
+    context = {
+        "products": products,
+    }
+    return HttpResponse(template.render(context, request))
