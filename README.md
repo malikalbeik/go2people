@@ -21,7 +21,7 @@ pip install -r requirements.txt
 #### 1. Create Django Database
 
 ```sh
-./manage.py makemigrations
+./manage.py makemigrations shop
 ./manage.py migrate
 ```
 
