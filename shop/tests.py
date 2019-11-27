@@ -10,10 +10,14 @@ class ProductTestCase(TestCase):
     def setUp(self):
         """Setting up the database"""
         Category.objects.create(title="test items")
-        Product.objects.create(name="Lumber Wood",
-                               description="Purple Heart 4/4 Project Pack: 20 Board Feet of Lumber",
-                               company_name="go2people", school_type="praktijkonderwijs",
-                               price=80.2, expiration_date=datetime.now(tz=timezone.utc))
+        Product.objects.create(
+            name="Lumber Wood",
+            description="Purple Heart 4/4 Project Pack: 20 Board Feet of Lumber",
+            company_name="go2people",
+            school_type="praktijkonderwijs",
+            price=80.2,
+            expiration_date=datetime.now(tz=timezone.utc),
+        )
 
     def test_create_product(self):
         """Testing that we have successfully created one product"""
@@ -25,7 +29,8 @@ class ProductTestCase(TestCase):
         wood = Product.objects.get(name="Lumber Wood")
         self.assertEqual(wood.name, "Lumber Wood")
         self.assertEqual(
-            wood.description, "Purple Heart 4/4 Project Pack: 20 Board Feet of Lumber")
+            wood.description, "Purple Heart 4/4 Project Pack: 20 Board Feet of Lumber"
+        )
         self.assertEqual(wood.company_name, "go2people")
         self.assertEqual(wood.school_type, "praktijkonderwijs")
         self.assertEqual(wood.price, 80.2)

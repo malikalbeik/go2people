@@ -36,15 +36,14 @@ class Product(models.Model):
     company_name = models.CharField(max_length=255)
     company_logo = models.ImageField(upload_to=get_image_path)
     categories = models.ManyToManyField(Category)
-    school_type = models.CharField(
-        max_length=160, choices=SCHOOL_CHOICES, null=False)
+    school_type = models.CharField(max_length=160, choices=SCHOOL_CHOICES, null=False)
     price = models.FloatField()
     expiration_date = models.DateField(null=False)
 
     def get_abbreviated_description(self):
         """returns only the first 25 words of the description"""
         word_array = str(self.description).split()[:25]
-        abbreviated_description = ' '.join(word_array)
+        abbreviated_description = " ".join(word_array)
         return abbreviated_description
 
     class Meta:
